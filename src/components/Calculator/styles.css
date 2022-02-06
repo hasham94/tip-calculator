@@ -8,11 +8,25 @@
   background: white;
   padding: 42px;
   border-radius: 16px;
-  min-width: 800px;
+}
+@media (min-width: 887px) {
+  .calculatorWrapper {
+    flex-direction: row;
+    min-width: 800px;
+  }
+}
+@media (max-width: 886px) {
+  .calculatorWrapper {
+    flex-direction: column;
+  }
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+.error {
+  color: #b47c6d;
+  word-spacing: 5px;
 }

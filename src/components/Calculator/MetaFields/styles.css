@@ -1,7 +1,11 @@
 .formWrapper {
   flex: 1;
-  padding-right: 32px;
   min-width: 300px;
+}
+@media (min-width: 887px) {
+  .formWrapper {
+    padding-right: 32px;
+  }
 }
 .formWrapper input:focus-visible {
   border-color: #58a59b !important;
@@ -11,7 +15,9 @@
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 6px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .fieldWrapper .textField {
   position: relative;
@@ -36,7 +42,7 @@
   margin: 32px 0px;
 }
 .selectTipWrapper .selectionBox {
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -55,6 +61,27 @@
   margin-top: 13px;
   cursor: pointer;
 }
+@media (max-width: 886px) {
+  .selectTipWrapper .selectionBox .selectTip {
+    width: 45%;
+  }
+  .selectTipWrapper .selectionBox .selectTip:nth-child(2n) {
+    margin-left: 28px;
+  }
+}
+@media (min-width: 887px) {
+  .selectTipWrapper .selectionBox .selectTip:nth-child(2),
+  .selectTipWrapper .selectionBox .selectTip:nth-child(5) {
+    margin: 0px 28px;
+  }
+}
+.selectTipWrapper .selectionBox .selectedTip {
+  background-color: #9fe8df !important;
+  color: #094f4e !important;
+}
+
 .selectTipWrapper .selectionBox input.selectTip {
   background-color: #f3f5f9;
+  color: #003532;
+  font-weight: 700;
 }

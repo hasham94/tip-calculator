@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-const Calculations = () => {
+const Calculations = ({ tipAmount, total, resetFieldsHandler }) => {
   return (
     <div className="resultsWrapper">
       <div className="results">
@@ -9,16 +9,16 @@ const Calculations = () => {
           <h3>
             Tip Amount <span>/ person</span>
           </h3>
-          <span className="amount">$0.00</span>
+          <span className="amount">${tipAmount}</span>
         </div>
         <div className="resultBox">
           <h3>
             Total <span>/ person</span>
           </h3>
-          <span className="amount">$0.00</span>
+          <span className="amount">${total}</span>
         </div>
       </div>
-      <button>Reset</button>
+      <button onClick={resetFieldsHandler}>Reset</button>
     </div>
   );
 };

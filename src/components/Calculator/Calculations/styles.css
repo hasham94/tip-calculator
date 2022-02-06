@@ -17,6 +17,7 @@
   background: #9fe8df;
   color: #0b534f;
   font-weight: 700;
+  cursor: pointer;
 }
 .resultsWrapper .results {
   color: white;
