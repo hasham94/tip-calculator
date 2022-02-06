@@ -6,8 +6,9 @@
 .calculatorWrapper {
   display: flex;
   background: white;
-  padding: 32px;
+  padding: 42px;
   border-radius: 16px;
+  min-width: 800px;
 }
 
 input::-webkit-outer-spin-button,

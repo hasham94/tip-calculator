@@ -1,4 +1,5 @@
 .formWrapper {
+  flex: 1;
   padding-right: 32px;
   min-width: 300px;
 }
@@ -23,6 +24,7 @@
   text-align: right;
   color: #00474b;
   font-weight: 700;
+  width: 88%;
 }
 .fieldWrapper .textField img {
   position: absolute;

@@ -1,4 +1,42 @@
 .resultsWrapper {
+  flex: 1;
   background-color: #00474b;
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.resultsWrapper button {
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  text-transform: uppercase;
   border-radius: 6px;
+  border: none;
+  background: #9fe8df;
+  color: #0b534f;
+  font-weight: 700;
+}
+.resultsWrapper .results {
+  color: white;
+}
+.results .resultBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.results .resultBox h3 {
+  font-size: 15px;
+}
+.results .resultBox h3 span {
+  font-size: 13px;
+  color: #729ba1;
+  display: block;
+  margin-top: 12px;
+}
+.results .resultBox .amount {
+  color: #24c6ae;
+  font-size: 46px;
+  font-weight: 500;
 }
