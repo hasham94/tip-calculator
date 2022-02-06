@@ -1,0 +1,58 @@
+.formWrapper {
+  padding-right: 32px;
+  min-width: 300px;
+}
+.formWrapper input:focus-visible {
+  border-color: #58a59b !important;
+}
+.fieldWrapper label,
+.selectTipWrapper label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+.fieldWrapper .textField {
+  position: relative;
+}
+.fieldWrapper .textField input {
+  background-color: #f3f8fb;
+  border: none;
+  padding: 4px 11px 4px 32px;
+  font-size: 25px;
+  text-align: right;
+  color: #00474b;
+  font-weight: 700;
+}
+.fieldWrapper .textField img {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  z-index: 9999;
+}
+.selectTipWrapper {
+  margin: 32px 0px;
+}
+.selectTipWrapper .selectionBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.selectTipWrapper .selectionBox .selectTip {
+  background-color: #00474b;
+  font-size: 22px;
+  text-align: center;
+  width: 28%;
+  padding: 8px 0px;
+  color: white;
+  border-radius: 6px;
+  display: inline-flex;
+  justify-content: center;
+  border-color: transparent;
+  margin-top: 13px;
+  cursor: pointer;
+}
+.selectTipWrapper .selectionBox input.selectTip {
+  background-color: #f3f5f9;
+}
